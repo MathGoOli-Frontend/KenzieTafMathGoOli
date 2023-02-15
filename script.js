@@ -21,6 +21,113 @@ passed = false;
 // if (gender === "male")  
 // **sua lógica a partir daqui**
 
+if (gender === "male"){ //pra deixar mais rápido eu vou deixar uma else if porque se for reprovado em um já acusa passed false
+    if(height < 1.70){
+        passed = false
+    }else if (abs < 41){
+        passed = false
+    }else {
+        passed = true
+    }
+    // bar reps
+    if (passed == true){
+        if(barReps < 6){
+            if (barSeconds >= 15){
+                passed = true
+            }
+        }else{
+            passed = true
+        }
+
+    }
+    
+    // natacao
+    if (passed == true){
+        if(swimDistance >= 100 && swimTime <= 60){
+            passed = true
+        }else if(diveTime <= 30){
+            passed = true
+        }else{
+            passed = false
+        }
+    }
+    
+
+    // corrida
+    if (passed == true){
+        if(runDistance >= 3000){
+            if (runTime <= 720){
+                passed = true
+            }else{
+                passed = false
+            }
+        }else if(runDistance >= 5000){
+            if (runTime <= 1200){
+                passed = true
+            }else{
+                passed = false
+            }
+        }else{
+            passed = false
+        }
+    }
+    
+    
+    
+
+}else if (gender === "female"){
+    if(height < 1.60){
+        passed = false
+    }else if (abs < 41){
+        passed = false
+    }else {
+        passed = true
+    }
+    // bar reps
+    if (passed == true){
+        if(barReps < 5){
+            if (barSeconds >= 12){
+                passed = true
+            }
+        }else{
+            passed = true
+        }
+
+    }
+    
+    // natacao
+    if (passed == true){
+        if(swimDistance >= 100 && swimTime <= 60){
+            passed = true
+        }else if(diveTime <= 30){
+            passed = true
+        }else{
+            passed = false
+        }
+    }
+    
+
+    // corrida
+    if (passed == true){
+        if(runDistance >= 4000){
+            if (runTime <= 900){
+                passed = true
+            }else{
+                passed = false
+            }
+        }else if(runDistance >= 6000){
+            if (runTime <= 1320){
+                passed = true
+            }else{
+                passed = false
+            }
+        }else{
+            passed = false
+        }
+    }
+
+}
+
 
 
 
